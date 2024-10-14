@@ -1,0 +1,41 @@
+@import '../../sass/style.scss';
+
+.loading {
+    height: 90vh;
+
+    #col {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .loader {
+        content: ' ';
+        border: 5px solid $white;
+        border-radius: 30px;
+        height: 40px;
+        width: 40px;
+        left: 50%;
+        margin: -15px 0 0 -15px;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        animation: pulsate 1s ease-out;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes pulsate {
+        0% {
+            transform: scale(.1);
+            opacity: 0.0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: scale(1.2);
+            opacity: 0;
+        }
+    }
+}

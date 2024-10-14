@@ -1,0 +1,21 @@
+@import '../../sass/style.scss';
+
+.itemDetailContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+        width: 70vw;
+
+        img {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 0px;
+            background: $dark-grey;
+            box-shadow: inset 15px 15px 29px #c7c7c7,
+                inset -15px -15px 35px #f9f9f9;
+        }
+    }
+}

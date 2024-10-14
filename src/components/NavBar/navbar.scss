@@ -1,0 +1,12 @@
+@import '../../sass/style.scss';
+
+.nav-bar {
+    
+    .border-light {
+        --bs-border-opacity: 0.3;
+    }
+
+    .bg-custom {
+        background: $dark-grey;
+    }
+}
