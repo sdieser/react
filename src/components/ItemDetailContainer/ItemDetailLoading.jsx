@@ -4,12 +4,17 @@ const ItemDetailLoading = ({ product }) => {
     return (
         <>
             <div className='itemDetailLoading'>
-                <div className="card mb-3 text-bg-light" aria-hidden="true">
+                <div className="card text-bg-light" aria-hidden="true">
                     <div className="row g-0">
-                        <div className="col-md-4">
+                        <div className='col-1 img-alt'>
+                            <img src={wineLoading} className="img-fluid border border-dark-subtle rounded" alt='Foto de botella' />
+                            <img src={wineLoading} className="img-fluid border border-dark-subtle rounded" alt='Foto de botella' />
+                            <img src={wineLoading} className="img-fluid border border-dark-subtle rounded" alt='Foto de botella' />
+                        </div>
+                        <div className="col-4 img-current ms-3">
                             <img src={wineLoading} className="img-fluid" alt='Foto de botella' />
                         </div>
-                        <div className="col-md-8 align-self-center">
+                        <div className="col align-self-center">
                             <div className="card-body">
                                 <ul className="list-group list-group-flush">
                                     <li className="list-group-item text-bg-light">
@@ -20,11 +25,9 @@ const ItemDetailLoading = ({ product }) => {
                                             </small>
                                         </h6>
                                         <p className="card-text text-body-secondary placeholder-glow">
-                                            <div>
-                                                <span className="placeholder col-12"></span>
-                                                <span className="placeholder col-12"></span>
-                                                <span className="placeholder col-12"></span>
-                                            </div>
+                                            <span className="placeholder col-12"></span>
+                                            <span className="placeholder col-12"></span>
+                                            <span className="placeholder col-12"></span>
                                         </p>
                                     </li>
                                     <li className="list-group-item text-bg-light">

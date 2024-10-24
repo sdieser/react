@@ -7,15 +7,38 @@
     align-items: center;
 
     .card {
-        width: 70vw;
+        width: 85vw;
+        padding: 15px;
 
-        img {
-            padding: 10px;
-            margin: 10px;
-            border-radius: 0px;
-            background: $dark-grey;
-            box-shadow: inset 15px 15px 29px #c7c7c7,
-                inset -15px -15px 35px #f9f9f9;
+        .img-alt {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            img:hover {
+                opacity: 0.5;
+                cursor: pointer;
+            }
+        }
+
+        .img-current {
+
+            img {
+                padding: 10px;
+                border-radius: 0px;
+                background: $dark-grey;
+                box-shadow: inset 15px 15px 29px #c7c7c7,
+                    inset -15px -15px 35px #f9f9f9;
+            }
+        }
+    }
+
+    .itemDetail {
+        .itemCount {
+            .input-group-text {
+                width: 50px;
+                justify-content: center;
+            }
         }
     }
 }

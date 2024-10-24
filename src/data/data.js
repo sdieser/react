@@ -8,7 +8,7 @@ const wines = [
         oenologist: "Héctor y Pablo Durigutti",
         price: 14035,
         stock: 11,
-        image: "/img/wines/wine_durigutti_3.jpg",
+        image: ["/img/wines/durigutti_cf_1.jpg", "/img/wines/durigutti_cf_2.jpg", "/img/wines/durigutti_cf_3.jpg"],
         logo: "/img/wines/logo_durigutti.jpg"
     },
     {
@@ -20,7 +20,7 @@ const wines = [
         detail: "Rojo violáceo con tintes granate. Aromáticamente es expresivo y despliega notas de ciruelas, moras y arándanos con trazos terrosos y florales. En boca es amable con frescura justa y buen equilibrio. Cuerpo medio, taninos jugosos y final de cuerdo floral.",
         oenologist: "Pablo Sánchez",
         stock: 5,
-        image: "/img/wines/wine_punto_final_3.jpg",
+        image: ["/img/wines/punto_final_m_1.jpg", "/img/wines/punto_final_m_2.jpg", "/img/wines/punto_final_m_3.jpg", "/img/wines/punto_final_m_4.jpg"],
         logo: "/img/wines/logo_renacer.jpg"
     },
     {
@@ -32,7 +32,7 @@ const wines = [
         oenologist: "Alejandro Vigil",
         price: 10366,
         stock: 2,
-        image: "/img/wines/wine_enemigo.jpg",
+        image: ["/img/wines/enemigo_c_1.jpg", "/img/wines/enemigo_c_2.jpg", "/img/wines/enemigo_c_3.jpg", "/img/wines/enemigo_c_4.jpg"],
         logo: "/img/wines/logo_casa_vigil.jpg"
     },
     {
@@ -44,7 +44,7 @@ const wines = [
         oenologist: "Luis cabral de Almeida",
         price: 19120,
         stock: 6,
-        image: "/img/wines/wine_dedicado_2.jpg",
+        image: ["/img/wines/dedicado_cs_1.jpg", "/img/wines/dedicado_cs_2.jpg", "/img/wines/dedicado_cs_3.jpg"],
         logo: "/img/wines/logo_flichman.jpg"
     },
     {
@@ -56,7 +56,7 @@ const wines = [
         oenologist: "Pulqui Rodríguez Villa",
         price: 14692,
         stock: 9,
-        image: "/img/wines/wine_riglos.jpg",
+        image: ["/img/wines/riglos_cs_1.jpg", "/img/wines/riglos_cs_2.jpg"],
         logo: "/img/wines/logo_riglos.jpg"
     },
     {
@@ -68,7 +68,7 @@ const wines = [
         oenologist: "Alejandro Vigil",
         price: 15024,
         stock: 3,
-        image: "/img/wines/wine_enemigo.jpg",
+        image: ["/img/wines/enemigo_m_1.jpg", "/img/wines/enemigo_m_2.jpg", "/img/wines/enemigo_m_3.jpg"],
         logo: "/img/wines/logo_casa_vigil.jpg"
     },
     {
@@ -80,7 +80,7 @@ const wines = [
         oenologist: "Héctor y Pablo Durigutti",
         price: 17866,
         stock: 8,
-        image: "/img/wines/wine_durigutti_2.jpg",
+        image: ["/img/wines/durigutti_cs_1.jpg", "/img/wines/durigutti_cs_2.jpg", "/img/wines/durigutti_cs_3.jpg"],
         logo: "/img/wines/logo_durigutti.jpg"
     },
     {
@@ -92,7 +92,7 @@ const wines = [
         oenologist: "Alejandro Vigil",
         price: 13556,
         stock: 2,
-        image: "/img/wines/wine_enemigo.jpg",
+        image: ["/img/wines/enemigo_cf_1.jpg", "/img/wines/enemigo_cf_2.jpg", "/img/wines/enemigo_cf_3.jpg"],
         logo: "/img/wines/logo_casa_vigil.jpg"
     },
     {
@@ -104,7 +104,7 @@ const wines = [
         oenologist: "Pablo Sánchez",
         price: 19549,
         stock: 4,
-        image: "/img/wines/wine_punto_final_2.jpg",
+        image: ["/img/wines/punto_final_cs_1.jpg", "/img/wines/punto_final_cs_2.jpg"],
         logo: "/img/wines/logo_renacer.jpg"
     },
     {
@@ -116,7 +116,7 @@ const wines = [
         oenologist: "Pablo Sánchez",
         price: 12027,
         stock: 4,
-        image: "/img/wines/wine_punto_final.jpg",
+        image: ["/img/wines/punto_final_cf_1.jpg", "/img/wines/punto_final_cf_2.jpg", "/img/wines/punto_final_cf_3.jpg"],
         logo: "/img/wines/logo_renacer.jpg"
     },
     {
@@ -128,7 +128,7 @@ const wines = [
         oenologist: "Pulqui Rodríguez Villa",
         price: 16195,
         stock: 6,
-        image: "/img/wines/wine_riglos.jpg",
+        image: ["/img/wines/riglos_m_1.jpg", "/img/wines/riglos_m_2.jpg", "/img/wines/riglos_m_3.jpg"],
         logo: "/img/wines/logo_riglos.jpg"
     },
     {
@@ -140,7 +140,7 @@ const wines = [
         oenologist: "Luis cabral de Almeida",
         price: 16679,
         stock: 2,
-        image: "/img/wines/wine_dedicado.jpg",
+        image: ["/img/wines/dedicado_m_1.jpg", "/img/wines/dedicado_m_2.jpg", "/img/wines/dedicado_m_3.jpg"],
         logo: "/img/wines/logo_flichman.jpg"
     },
     {
@@ -152,7 +152,7 @@ const wines = [
         oenologist: "Pulqui Rodríguez Villa",
         price: 14800,
         stock: 3,
-        image: "/img/wines/wine_riglos.jpg",
+        image: ["/img/wines/riglos_cf_1.jpg", "/img/wines/riglos_cf_2.jpg", "/img/wines/riglos_cf_3.jpg"],
         logo: "/img/wines/logo_riglos.jpg"
     },
     {
@@ -164,7 +164,7 @@ const wines = [
         oenologist: "Héctor y Pablo Durigutti",
         price: 18647,
         stock: 13,
-        image: "/img/wines/wine_durigutti.jpg",
+        image: ["/img/wines/durigutti_m_1.jpg", "/img/wines/durigutti_m_2.jpg"],
         logo: "/img/wines/logo_durigutti.jpg"
     },
     {
@@ -176,7 +176,7 @@ const wines = [
         oenologist: "Francois Lurton",
         price: 15426,
         stock: 5,
-        image: "/img/wines/wine_piedra_negra.jpg",
+        image: ["/img/wines/piedra_negra_c_1.jpg", "/img/wines/piedra_negra_c_2.jpg", "/img/wines/piedra_negra_c_3.jpg"],
         logo: "/img/wines/logo_piedra_negra.jpg"
     }
 ]
@@ -185,7 +185,6 @@ const getWines = (idVarietal) => {
     if (idVarietal) {
         return new Promise((res, rej) => {
             res(wines)
-
         })
     } else {
         return new Promise((res, rej) => {

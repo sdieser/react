@@ -1,0 +1,31 @@
+@import '../../sass/style.scss';
+
+.cartContainer {
+    padding-top: 85px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+        width: 50vw;
+        background-color: $white;
+
+        .list-group-item {
+            border-color: $light-grey;
+            display: flex;
+            align-items: center;
+        }
+
+        li {
+            background-color: $white;
+        }
+
+        .imgCart {
+            height: 100px;
+            width: 100px;
+            border-radius: 5px;
+        }
+    }
+}
