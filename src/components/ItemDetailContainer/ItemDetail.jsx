@@ -18,7 +18,6 @@ const ItemDetail = ({ product, addProduct, hideCount }) => {
                             {
                                 images.map((image) => (
                                     <img src={image} key={image} className='img-fluid border border-dark-subtle rounded' alt='Foto de botella' onClick={() => setCurrentImage(image)} />
-
                                 ))
                             }
                         </div>

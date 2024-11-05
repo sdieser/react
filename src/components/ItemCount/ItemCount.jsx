@@ -18,7 +18,6 @@ const ItemCount = ({ stock, addProduct }) => {
     return (
         <>
             <div className='itemCount'>
-                
                 <div className='btn-toolbar'>
                     <div className='btn-group me-3'>
                         <div className='input-group'>
@@ -34,8 +33,6 @@ const ItemCount = ({ stock, addProduct }) => {
                     </div>
                 </div>
             </div>
-
-
         </>
     )
 }

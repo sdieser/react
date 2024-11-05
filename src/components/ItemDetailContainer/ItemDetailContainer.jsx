@@ -1,7 +1,7 @@
-import { useState, useEffect, useContext } from 'react'
-import { getWine } from '../../data/data.js'
+import { useState, useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import { CartContext } from '../../context/CartContext.jsx'
+import useWine from '../../hooks/useWine.jsx'
 import ItemDetail from './ItemDetail.jsx'
 import ItemDetailLoading from './ItemDetailLoading.jsx'
 import './itemDetailContainer.scss'
@@ -9,8 +9,6 @@ import './itemDetailContainer.scss'
 const ItemDetailContainer = () => {
     const { idWine } = useParams()
     const { addWineCart } = useContext(CartContext)
-    const [wine, setWine] = useState({})
-    const [wineLoad, setWineLoad] = useState(true)
     const [hideCount, setHideCount] = useState(false)
     const addProduct = (count) => {
         const wineCart = { ...wine, quantity: count }
@@ -18,13 +16,7 @@ const ItemDetailContainer = () => {
         setHideCount(true)
     }
 
-    useEffect(() => {
-        setWineLoad(true)
-        getWine(idWine)
-            .then((data) => setWine(data))
-            .catch((error) => console.error(error))
-            .finally(() => setWineLoad(false))
-    }, [])
+    const { wine, wineLoad } = useWine(idWine)
 
     return (
         <div className='itemDetailContainer'>

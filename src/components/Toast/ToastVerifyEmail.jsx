@@ -1,8 +1,8 @@
 import { toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const ToastStock = () => {
-    toast.error('Se supero la cantidad', {
+const ToastVerifyEmail = () => {
+    toast.error('Los correos no coinciden', {
         position: 'bottom-right',
         autoClose: 3000,
         hideProgressBar: false,
@@ -14,4 +14,4 @@ const ToastStock = () => {
         transition: Slide
     })
 }
-export { ToastStock }
+export { ToastVerifyEmail }

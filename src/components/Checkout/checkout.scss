@@ -1,0 +1,36 @@
+@import '../../sass/style.scss';
+
+.checkout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .formCheckout {
+        padding-top: 70px;
+
+        .card {
+            width: 40vw;
+        }
+    }
+
+    .orderSucess {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .card {
+            height: 45vh;
+            width: 55vw;
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        }
+    }
+}

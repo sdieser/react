@@ -1,5 +1,5 @@
-import { createContext, useState } from "react";
-import { ToastStock } from "../components/Toast/ToastStock";
+import { createContext, useState } from 'react';
+import { ToastStock } from '../components/Toast/ToastStock';
 
 const CartContext = createContext()
 
@@ -34,8 +34,12 @@ const CartProvider = ({ children }) => {
         return total
     }
 
+    const deleteCart = () => {
+        setCart([])
+    }
+
     return (
-        <CartContext.Provider value={{ cart, addWineCart, cartTotal, priceTotal, deleteWineCart }}>
+        <CartContext.Provider value={{ cart, addWineCart, cartTotal, priceTotal, deleteWineCart, deleteCart }}>
             {children}
         </CartContext.Provider>
     )

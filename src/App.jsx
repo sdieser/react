@@ -2,6 +2,7 @@ import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
+import Checkout from './components/Checkout/Checkout';
 import Footer from './components/Footer/Footer';
 import { CartProvider } from './context/CartContext';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -16,18 +17,17 @@ function App() {
       <BrowserRouter>
         <CartProvider>
           <NavBar />
+          <ToastContainer />
           <Routes>
             <Route path='/' element={<ItemListContainer />} />
             <Route path='/varietal/:idVarietal' element={<ItemListContainer />} />
             <Route path='/detail/:idWine' element={<ItemDetailContainer />}></Route>
             <Route path='/cart' element={<Cart />}></Route>
+            <Route path='/checkout' element={<Checkout />}></Route>
           </Routes>
           <Footer />
         </CartProvider>
       </BrowserRouter>
-      <div>
-        <ToastContainer />
-      </div>
     </div>
   )
 }

@@ -6,9 +6,7 @@ import './ItemListContainer.scss';
 
 const ItemListContainer = () => {
     const { idVarietal } = useParams()
-
     const { wines, loading } = useWines(idVarietal)
-
 
     return (
         <>

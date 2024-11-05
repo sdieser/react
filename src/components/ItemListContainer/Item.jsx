@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
 const Item = ({ wine }) => {
     const formatter = new Intl.NumberFormat('es-AR');
@@ -12,7 +12,7 @@ const Item = ({ wine }) => {
                 <h6 className='card-subtitle mb-2 text-body-secondary'>{wine.varietal}</h6>
                 <p className='card-text'>$ {formatter.format(wine.price)}</p>
                 <Link to={`/detail/${wine.id}`} >
-                    <button type="button" className="btn btn-outline-dark">Ver detalle</button>
+                    <button type='button' className='btn btn-outline-dark'>Ver detalle</button>
                 </Link>
             </div>
         </>

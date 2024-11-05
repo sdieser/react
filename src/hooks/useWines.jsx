@@ -1,27 +1,46 @@
-import { useEffect, useState } from "react";
-import { getWines } from "../data/data";
+import { useState, useEffect } from 'react';
+import { collection, getDocs, query, where } from 'firebase/firestore';
+import db from '../db/firebase'
 
 const useWines = (idVarietal) => {
     const [wines, setWines] = useState([])
     const [loading, setLoading] = useState(false)
-    useEffect(() => {
+
+    const getWines = () => {
         setLoading(true)
-        getWines(idVarietal)
-            .then((data) => {
-                if (idVarietal) {
-                    const filterVarietal = data.filter((wine) => wine.varietal === idVarietal)
-                    setWines(filterVarietal)
-                } else {
-                    setWines(data)
-                }
-            })
-            .catch((error) => {
-                console.error(error)
-            })
-            .finally(() => setLoading(false))
+        const collectionName = collection(db, 'wines')
+        if (idVarietal) {
+            const q = query(collectionName, where('varietal', '==', idVarietal))
+            getDocs(q)
+                .then((data) => {
+                    const winesDb = data.docs.map((wine) => {
+                        return { id: wine.id, ...wine.data() }
+                    })
+                    setWines(winesDb)
+                })
+                .catch((error) => {
+                    console.error(error)
+                })
+                .finally(() => setLoading(false))
+        } else {
+            getDocs(collectionName)
+                .then((data) => {
+                    const winesDb = data.docs.map((wine) => {
+                        return { id: wine.id, ...wine.data() }
+                    })
+                    setWines(winesDb)
+                })
+                .catch((error) => {
+                    console.error(error)
+                })
+                .finally(() => setLoading(false))
+        }
+    }
+
+    useEffect(() => {
+        getWines()
     }, [idVarietal])
 
     return { wines, loading }
 }
-
 export default useWines
