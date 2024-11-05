@@ -1,6 +1,6 @@
-import useWines from '../../hooks/useWines';
-import ItemList from './ItemList';
-import Loading from '../Loading/Loading';
+import useWines from '../../hooks/useWines.jsx';
+import ItemList from './ItemList.jsx';
+import Loading from '../Loading/Loading.jsx';
 import { useParams } from 'react-router-dom';
 import './ItemListContainer.scss';
 

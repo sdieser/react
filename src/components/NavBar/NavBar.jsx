@@ -1,5 +1,5 @@
 import './navbar.scss';
-import CartWidget from './CartWidget';
+import CartWidget from './CartWidget.jsx';
 import logo from '../../assets/logo_white.png';
 import { Link } from 'react-router-dom'
 

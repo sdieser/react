@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import ItemCount from '../ItemCount/ItemCount'
-import FinishPurchase from '../FinishPurchase/FinishPurchase';
+import ItemCount from '../ItemCount/ItemCount.jsx'
+import FinishPurchase from '../FinishPurchase/FinishPurchase.jsx';
 
 const ItemDetail = ({ product, addProduct, hideCount }) => {
     const formatter = new Intl.NumberFormat('es-AR');

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { collection, getDocs, query, where } from 'firebase/firestore';
-import db from '../db/firebase'
+import db from '../db/firebase.js'
 
 const useWines = (idVarietal) => {
     const [wines, setWines] = useState([])
