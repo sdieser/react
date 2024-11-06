@@ -4,6 +4,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import Cart from './components/Cart/Cart.jsx';
 import Checkout from './components/Checkout/Checkout.jsx';
 import Footer from './components/Footer/Footer.jsx';
+import NotFound from './components/NotFound/NotFound.jsx';
 import { CartProvider } from './context/CartContext.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ToastContainer } from 'react-toastify';
@@ -24,6 +25,7 @@ function App() {
             <Route path='/detail/:idWine' element={<ItemDetailContainer />}></Route>
             <Route path='/cart' element={<Cart />}></Route>
             <Route path='/checkout' element={<Checkout />}></Route>
+            <Route path='*' element={<NotFound />}></Route>
           </Routes>
           <Footer />
         </CartProvider>
